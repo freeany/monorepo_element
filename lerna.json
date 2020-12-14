@@ -1,4 +1,4 @@
 {
-  "packages": ["packages/**/stories/**.stories.js"],
+  "packages": ["packages/*"],
   "version": "0.0.1"
 }
