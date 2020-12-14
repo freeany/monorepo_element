@@ -1,7 +1,7 @@
-import HrButton from './src/button.vue'
+import RrButton from './src/button.vue'
 
-HrButton.install = Vue => {
-  Vue.component(HrButton.name, HrButton)
+RrButton.install = Vue => {
+  Vue.component(RrButton.name, RrButton)
 }
 
-export default HrButton
+export default RrButton

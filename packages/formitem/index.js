@@ -1,7 +1,7 @@
-import HrFormItem from './src/formitem.vue'
+import RrFormItem from './src/formitem.vue'
 
-HrFormItem.install = Vue => {
-  Vue.component(HrFormItem.name, HrFormItem)
+RrFormItem.install = Vue => {
+  Vue.component(RrFormItem.name, RrFormItem)
 }
 
-export default HrFormItem
+export default RrFormItem

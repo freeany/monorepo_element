@@ -1,7 +1,7 @@
-import HrInput from './src/input.vue'
+import RrInput from './src/input.vue'
 
-HrInput.install = Vue => {
-  Vue.component(HrInput.name, HrInput)
+RrInput.install = Vue => {
+  Vue.component(RrInput.name, RrInput)
 }
 
-export default HrInput
+export default RrInput

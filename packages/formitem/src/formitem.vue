@@ -9,7 +9,7 @@
 <script>
 import Schema from 'async-validator'
 export default {
-  name: 'LgFormItem',
+  name: 'RrFormItem',
   inject: ['Form'],
   data() {
     return {

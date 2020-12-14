@@ -1,7 +1,7 @@
-import HrSteps from './src/steps.vue'
+import RrSteps from './src/steps.vue'
 
-HrSteps.install = Vue => {
-  Vue.component(HrSteps.name, HrSteps)
+RrSteps.install = Vue => {
+  Vue.component(RrSteps.name, RrSteps)
 }
 
-export default HrSteps
+export default RrSteps

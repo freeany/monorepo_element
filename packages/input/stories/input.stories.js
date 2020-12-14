@@ -1,14 +1,14 @@
 // 建立stories文件
-import HrInput from '../'
+import RrInput from '../'
 
 export default {
-  title: 'HrInput',
-  component: HrInput
+  title: 'RrInput',
+  component: RrInput
 }
 
 export const Text = () => ({
-  components: { HrInput },
-  template: '<hr-input v-model="value"></hr-input>',
+  components: { RrInput },
+  template: '<rr-input v-model="value"></rr-input>',
   data() {
     return {
       value: 'admin'
@@ -17,8 +17,8 @@ export const Text = () => ({
 })
 
 export const Password = () => ({
-  components: { HrInput },
-  template: '<hr-input type="password" v-model="value"></hr-input>',
+  components: { RrInput },
+  template: '<rr-input type="password" v-model="value"></rr-input>',
   data() {
     return {
       value: 'admin'

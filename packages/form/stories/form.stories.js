@@ -1,56 +1,56 @@
-import HrForm from '../'
-import HrFormItem from '../../formitem'
-import HrInput from '../../input'
-import HrButton from '../../button'
+import RrForm from '../'
+import RrFormItem from '../../formitem'
+import RrInput from '../../input'
+import RrButton from '../../button'
 
 // export default 的是一级目录的名称
 export default {
-  title: 'HrForm',
-  component: HrForm
+  title: 'RrForm',
+  component: RrForm
 }
 
 export const login = () => ({
-  components: { HrForm, HrFormItem, HrInput, HrButton },
+  components: { RrForm, RrFormItem, RrInput, RrButton },
   template: `
-    <hr-form class="form" ref="form" :model="user" :rules="rules">
-      <hr-button type="primary">
-        <hr-form-item label="用户名" prop="username">
-          <!-- <hr-input v-model="user.username"></hr-input> -->
-          <hr-input
+    <rr-form class="form" ref="form" :model="user" :rules="rules">
+      <rr-button type="primary">
+        <rr-form-item label="用户名" prop="username">
+          <!-- </rr-input v-model="user.username"></> -->
+          <rr-input
             :value="user.username"
             @input="user.username = $event"
             placeholder="请输入用户名"
-          ></hr-input> </hr-form-item
-      ></hr-button>
+          ></rr-input> </rr-form-item
+      ></rr-button>
 
       <table>
         <tbody>
-          <hr-form-item label="用户名" prop="username">
-            <!-- <hr-input v-model="user.username"></hr-input> -->
-            <hr-input
+          <rr-form-item label="用户名" prop="username">
+            <!-- </rr-input v-model="user.username"></> -->
+            <rr-input
               :value="user.username"
               @input="user.username = $event"
               placeholder="请输入用户名"
-            ></hr-input>
-          </hr-form-item>
+            ></rr-input>
+          </rr-form-item>
         </tbody>
       </table>
 
-      <hr-form-item label="密码" prop="password">
-        <hr-input
+      <rr-form-item label="密码" prop="password">
+        <rr-input
           type="password"
           placeholder="enter name"
           v-model="user.password"
-        ></hr-input>
-      </hr-form-item>
-      <hr-form-item prop="cc">
-        <hr-button type="primary" @click="login">登 录</hr-button>
-      </hr-form-item>
-      <hr-form-item>
-        <hr-button type="primary" @click="login">q q</hr-button>
-      </hr-form-item>
-      <hr-input placeholder="test.." v-model="user.test"></hr-input>
-    </hr-form>`,
+        ></rr-input>
+      </rr-form-item>
+      <rr-form-item prop="cc">
+        <rr-button type="primary" @click="login">登 录</rr-button>
+      </rr-form-item>
+      <rr-form-item>
+        <rr-button type="primary" @click="login">q q</rr-button>
+      </rr-form-item>
+      <rr-input placeholder="test.." v-model="user.test"></rr-input>
+    </rr-form>`,
 
   data() {
     return {

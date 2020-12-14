@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HrButton',
+  name: 'RrButton',
   methods: {
     handleClick(evt) {
       this.$emit('click', evt)

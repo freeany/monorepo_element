@@ -12,7 +12,7 @@ export default {
       Form: this
     }
   },
-  name: 'LgForm',
+  name: 'RrForm',
   props: {
     model: {
       type: Object,
