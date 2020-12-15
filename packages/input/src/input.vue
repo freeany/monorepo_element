@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input :type="type" v-bind="$attrs" @input="inputHandle" />
+    <input :type="type" :value="value" v-bind="$attrs" @input="inputHandle" />
   </div>
 </template>
 
@@ -12,6 +12,10 @@ export default {
     type: {
       type: String,
       default: 'text'
+    },
+    value: {
+      type: String,
+      default: ''
     }
   },
   methods: {
